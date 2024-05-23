@@ -2,7 +2,7 @@ from rest_framework import serializers
 from main_app.models import *
 
 
-class UserSerializer(serializers.ModelSerializer):
+class CustomUserSerializer(serializers.ModelSerializer):
     class Meta:
         model = CustomUser
         fields = '__all__'

@@ -6,12 +6,12 @@ from rest_framework import generics
 
 class UserList(generics.ListCreateAPIView):
     queryset = CustomUser.objects.all()
-    serializer_class = UserSerializer
+    serializer_class = CustomUserSerializer
 
 
 class UserDetail(generics.RetrieveUpdateDestroyAPIView):
     queryset = CustomUser.objects.all()
-    serializer_class = UserSerializer
+    serializer_class = CustomUserSerializer
 
 
 class ProblemList(generics.ListCreateAPIView):
