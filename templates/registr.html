@@ -1,0 +1,16 @@
+{% extends "base.html" %}
+{% block title %} Новый пользователь {% endblock %}
+  {% block content %}
+  <div class="example__container">
+    <h1 class="example__title">Регистрация</h1>
+    <form class="example" action="http://localhost:8000/user/" method="post">
+        {% csrf_token %}
+        <div><input type="text" class="answer__input" placeholder="Фамилия" name="username"></div>
+        <div><input type="text" class="answer__input" placeholder="Имя" name="firstname"></div>
+        <div><input type="text" class="answer__input" placeholder="Отчество" name="lastname"></div>
+        <div><input type="email" class="answer__input" placeholder="E-mail" name="email"></div>
+        <div><input type="password" class="answer__input" placeholder="Пароль" name="password"></div>
+        <button class="home__start_btn" type="submit">Зарегистрироваться</button>
+    </form>
+  </div>
+  {% endblock %}

@@ -1,0 +1,11 @@
+{% extends "baseHome.html" %}
+{% block title %} Главная {% endblock %}
+  {% block content %}
+  <div class="home__container">
+    <h1 class="home__title">Математический тренажёр</h1>
+    <form method="post">
+      {% csrf_token %}
+      <button class="home__start_btn" type="submit">Начать решать</button>
+    </form>
+  </div>
+  {% endblock %}

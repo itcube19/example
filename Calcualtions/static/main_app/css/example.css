@@ -1,0 +1,125 @@
+body{
+    height: 100vh;
+}
+.container{
+    height: 100%;
+}
+.example__container{
+    height: 100vh;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 54px;
+    padding-top: 60px;
+}
+.example__title{
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 50px;
+    line-height: 61px;
+    text-align: center;
+    margin: 0 auto;
+    color: #4A7E4C;
+}
+.example{
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    padding: 37px 70px;
+    gap: 10px;
+
+    width: 553px;
+
+    background: #79DF7D;
+    border: 10px solid #4A7E4C;
+    border-radius: 20px;
+    margin: 0 auto;
+}
+.row {
+    display: flex;
+    align-items: center;
+    gap: 50px;
+}
+.example__window{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 30px;
+    gap: 10px;
+
+    margin: 0 auto;
+    width: 400px;
+
+    background: #EBEBEB;
+    border-radius: 45px;
+
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+}
+.example__txt{
+    width: 254px;
+    height: 44px;
+
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 30px;
+    line-height: 44px;
+
+    text-align: center;
+    letter-spacing: 0.14em;
+
+    color: #4A4A4A;
+
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+
+}
+.answer__input{
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 13px 0px;
+    gap: 10px;
+
+    margin: 0 auto;
+    width: 338px;
+    height: 65px;
+
+    background: #EBEBEB;
+    border: 3px solid #4A7E4C;
+    border-radius: 12px;
+
+    flex: none;
+    order: 1;
+    flex-grow: 0;
+}
+.answer__input::placeholder{
+    margin: 0 auto;
+    width: 248px;
+    height: 39px;
+
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 39px;
+
+    text-align: center;
+
+    color: #CACACA;
+
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+
+}

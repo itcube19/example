@@ -1,0 +1,30 @@
+/*Шрифт*/
+.up{
+	display: flex;
+	flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+    align-content: center;
+}
+.scoreboard{
+	display: flex;
+	flex-direction: column;
+	flex-wrap: wrap;
+    margin-left: auto;
+    margin-right: auto;
+    width: auto;
+	position: relative;
+	top: 250px;
+	border: 10px solid;
+	background-color: rgba(121, 223, 125, 1);
+	border-color: rgba(74, 126, 76, 1);
+	border-radius: 45px;
+}
+.top{
+	width: fit-content;
+    padding: 5px 30px;
+    gap: 10px;
+    color: rgba(235, 235, 235, 1);
+    -webkit-text-stroke: 1px rgba(74, 126, 76, 1);
+  	text-stroke: 1px rgba(74, 126, 76, 1);
+}

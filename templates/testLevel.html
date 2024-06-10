@@ -1,0 +1,41 @@
+{% extends "base.html" %}
+{% block title %} Реши пример! {% endblock %}
+{% block content %}
+<div class="example__container">
+    <h1 class="example__title">Реши!</h1>
+    <div class="row">
+        <form class="example" action="{% url 'generate_example' %}" method="get">
+            {% csrf_token %}
+            <label for="difficulty">Уровень сложности:</label>
+            <select name="difficulty">
+                <option value="easy">Легкий</option>
+                <option value="medium">Средний</option>
+                <option value="hard">Сложный</option>
+            </select>
+            <label for="type">Тип примеров:</label>
+            <select name="type_check">
+                <option value="addition">Сложение</option>
+                <option value="subtraction">Вычитание</option>
+                <option value="multiplication">Умножение</option>
+                <option value="division">Деление</option>
+                <option value="mixed">Смешанный</option>
+            </select>
+            <input type="submit" value="Сгенерировать пример">
+        </form>
+        {% if example %}
+            <div class="example__window">
+                {{ example.problem }}
+                <form action="{% url 'check_answer' %}" method="GET">
+                    <label for="answer">Решение:</label>
+                    <input type="hidden" name="example_problem" value="{{ example.problem }}">
+                    <div><input type="text" class="answer__input" placeholder="Поле для ввода" name="answer"></div>
+                    <button class="home__start_btn" type="submit">Проверить решение</button>
+                </form>
+                {% if is_correct %}
+                    <h2>Правильно!</h2>
+                {% endif %}
+            </div>
+        {% endif %}
+    </div>
+</div>
+    {% endblock %}

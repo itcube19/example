@@ -1,0 +1,40 @@
+.check{
+    margin: 0 auto;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    justify-content: center; 
+    width: 845px;
+    height: 135px;
+
+    background: #79DF7D;
+    border: 10px solid #4A7E4C;
+    border-radius: 42px;
+}
+.check__txt{
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 900;
+    font-size: 40px;
+    line-height: 48px;
+    text-align: center;
+
+    color: #EDEDED;
+}
+.settings{
+    margin: 0 auto;
+    display: flex;
+    max-width: 845px;
+    gap: 113px;
+    justify-content: center;
+}
+.settings__container{
+    box-sizing: border-box;
+
+    width: 366px;
+    height: 370px;
+
+    background: #79DF7D;
+    border: 10px solid #4A7E4C;
+    border-radius: 34px;
+}
